@@ -197,36 +197,71 @@ main .titulo-bio {
 
 .section-general {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 25%;
-}
-
-.imagen-perfil {
-    display: flex;
-/*     margin-left: 25vw;
- */    align-items: center;
-    justify-content: center;
+    justify-items: end;
 }
 
 .imagen-perfil img {
     height: auto;
-    max-width: 100%;
+    width: 20vw;
+    max-width: 90%;
     min-width: 200px;
     height: auto;
 }
 
 .general {
-    font-size: 4vw;    
+    font-size: 3rem;    
     margin-top: 14px;
     width: 100%;
 }
 
 .general h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-top: 30px;
     margin-bottom: 5vh;
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 32px;
+    max-width: 60vw;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+.contenedor-historia{
+    display: flex;
+    align-self: center;
+}
+
+.contenedor-historia h2 {
+    font-size: 3rem;    
+    margin-top: 14px;
+    width: 100%;
+}
+
+.texto-historia {
+    margin-top: 40px;
+    align-self: center;
+    column-count: 2;
+    width: 70vw;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-hitos{
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-hitos h2 {
+    font-size: 3rem;    
+    margin-top: 14px;
+    width: 100%;
 }
 
 
