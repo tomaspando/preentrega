@@ -376,7 +376,6 @@ main .titulo-calendario {
 } */
 
 .contenedor {
-    background-color: #F8F1F1;
     display: grid;
     grid-template-columns: 1fr;
     width: 90%;
@@ -397,11 +396,11 @@ main .titulo-calendario {
     overflow: hidden;
     background-size: cover;
     background-position: 50% 70%;
-    transition: all .5s;
+    transition: all .5s !important;
 }
 
 .australia:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important; 
 }
 
 .rolandgarros {
@@ -414,11 +413,11 @@ main .titulo-calendario {
     overflow: hidden;
     background-size: cover;
     background-position: 50% 68%;
-    transition: all .5s;
+    transition: all .5s !important;
 }
 
 .rolandgarros:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 .wimbledon {
@@ -431,11 +430,11 @@ main .titulo-calendario {
     overflow: hidden;
     background-size: cover;
     background-position: 50% 90%;
-    transition: all .5s;
+    transition: all .5s !important;
 }
 
 .wimbledon:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 .usopen {
@@ -448,11 +447,11 @@ main .titulo-calendario {
     overflow: hidden;
     background-size: cover;
     background-position: 80% 70%;
-    transition: all .5s;
+    transition: all .5s !important;
 }
 
 .usopen:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 .textos {
@@ -510,6 +509,7 @@ iframe {
     width: 100%;
     height: 100%;
 }
+
   
 
 
