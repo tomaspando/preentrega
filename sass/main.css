@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f8f1f1;
+}
+
+#header {
+  background-color: black;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  min-height: 50px;
+}
+#header .logo img {
+  width: 7.3vw;
+  height: auto;
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  min-width: 60px;
+  z-index: 101;
+  min-width: 85px;
+}
+#header .menu ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 30px;
+}
+#header .menu ul li a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1pt;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 1px;
+}
+#header .menu ul li a :hover {
+  color: red;
+}
+
+.nav-label, .nav-input {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-label {
+    display: block;
+    cursor: pointer;
+    margin-top: 50%;
+  }
+  .botones-menu {
+    position: fixed;
+    top: 8%;
+    bottom: 0;
+    background: black;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: -webkit-clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out;
+    transition: clip-path 1s ease-in-out, -webkit-clip-path 1s ease-in-out;
+  }
+  .nav-input:checked + .botones-menu {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .contenedor-contacto {
+    height: 50%;
+  }
+}
+#footer {
+  display: flex;
+  padding: 0.2vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0C0B0B;
+  background-image: url(../imagenes/footer2.png);
+  background-position: center;
+  background-size: cover;
+}
+#footer .redes {
+  padding: 10px;
+}
+#footer .redes img {
+  width: 3vw;
+  min-width: 30px;
+}
+#footer .redes .facebook {
+  padding-right: 32px;
+}
+#footer .redes .twitter {
+  padding-right: 32px;
+}
+
+#main-calendario {
+  width: cover;
+  height: 92vh;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: url(../imagenes/calendario.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#main-calendario .titulo-calendario {
+  margin-bottom: 10vh;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 11px black;
+  color: white;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  gap: 20px;
+}
+.contenedor .australia {
+  background-image: url(../imagenes/ao.jpg);
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 70%;
+  transition: all 0.5s !important;
+}
+.contenedor .australia:hover {
+  transform: scale(1.05) !important;
+}
+.contenedor .rolandgarros {
+  background-image: url(../imagenes/rg.jpg);
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 68%;
+  transition: all 0.5s !important;
+}
+.contenedor .rolandgarros:hover {
+  transform: scale(1.05) !important;
+}
+.contenedor .wimbledon {
+  background-image: url(../imagenes/wimbledon.jpg);
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 90%;
+  transition: all 0.5s !important;
+}
+.contenedor .wimbledon:hover {
+  transform: scale(1.05) !important;
+}
+.contenedor .usopen {
+  background-image: url(../imagenes/usopen.jpg);
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 80% 70%;
+  transition: all 0.5s !important;
+}
+.contenedor .usopen:hover {
+  transform: scale(1.05) !important;
+}
+.contenedor .textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: white;
+  text-shadow: 5px 1px 6px #000000;
+}
+
+@media (max-width: 768px) {
+  #main-calendario {
+    height: 50vh;
+  }
+  #main-calendario .titulo-calendario {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=main.css.map */
