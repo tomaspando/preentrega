@@ -15,10 +15,7 @@ body {
 
 #header {
     background-color: black;
-/*     height: 128px; */
     z-index: 100;
-/*     top: 0px;
- */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -36,9 +33,6 @@ body {
 #header .logo img {
     width: 7.3vw;
     height: auto;
-/*     background-color: white;
- *//*     padding: 20px; 
- */
     position: absolute;
     left: 30px;
     top: 0px;
@@ -81,8 +75,6 @@ body {
         display: block;
         cursor: pointer;
         margin-top: 50%;
-        
-        
     }
 
     .botones-menu {
@@ -368,13 +360,6 @@ main .titulo-calendario {
 
 }
 
-/* .section-calendario {
-    background-color: #F8F1F1;
-    display: grid;
-    grid-template-columns: 1fr;
-
-} */
-
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
@@ -460,7 +445,6 @@ main .titulo-calendario {
     justify-content: space-between;
     height: 100%;
     color: white;
-    
     text-shadow: 5px 1px 6px #000000;
 }
 
@@ -487,14 +471,6 @@ main .titulo-media {
     color: white;
 }
 
-/* .section-media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F8F1F1;
-    height: 80vh;
-} */
-
 .contenedor-iframe {
     position: relative;
     width: 100%;
@@ -511,9 +487,6 @@ iframe {
 }
 
   
-
-
-
 
 /* CONTACTO */
 
