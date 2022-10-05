@@ -657,6 +657,8 @@ textarea {
         display: none;
     }
 
+
+
     .timeline-fecha--derecha {
         font-size: 2rem;
         font-weight: bold;
@@ -675,7 +677,8 @@ textarea {
         margin-top: 10px;
         margin-bottom: 10px;
         width: 30vw;
-        min-width: 400px;
+        min-width: 300px;
+        max-width: 300px;
     }
 
     .timeline-imagen--alta img{
@@ -683,7 +686,7 @@ textarea {
         margin-bottom: 10px;
         height: 60vh;
         width: auto;
-        max-height: 55vh;
+        max-height: 380px;
         min-width: 0px;
     }
 
