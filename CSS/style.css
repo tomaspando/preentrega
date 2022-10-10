@@ -144,9 +144,63 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: url(../imagenes/home.png);
+/*     background: url(../imagenes/home.png);
     background-size: cover;
+    background-position: center; */
+    
+    background: #000;
+    position: relative;
+    overflow: hidden;
     background-position: center;
+}
+
+#main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../imagenes/home\ 2.jpg) no-repeat;
+    background-size: cover;
+    opacity: .8;
+    background-position: center;
+    animation-name: change ;
+    animation-direction: alternate ;
+    animation-duration: 40s ;
+    animation-fill-mode: forwards ;
+    animation-iteration-count: infinite ;
+    animation-timing-function: ease-in-out ;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(../imagenes/home\ 2.jpg);
+        background-position: top;
+        transform: scale(1);
+    }
+    20% {
+        background-image: url(../imagenes/home\ 4.jpg);
+        background-position: top;
+    }
+    40% {
+        background-image: url(../imagenes/home\ 5.jpg);
+        background-position: top;
+    }
+    60% {
+        background-image: url(../imagenes/home\ 6.jpg);
+        background-position: top;
+    }
+    80% {
+        background-image: url(../imagenes/home\ 3.webp);
+        background-position: center;
+    }
+    100% {
+        background-image: url(../imagenes/home\ 8.jpg);
+        background-position: center;
+        transform: scale(1.2);
+
+    }
 }
 
 #main .texto-principal {
@@ -155,6 +209,7 @@ body {
     font-size: 3.5rem;
     text-shadow: 2px 2px 11px black;
     color: white;
+    z-index: 1;
 
 }
 
@@ -175,13 +230,13 @@ body {
 
 #main-bio {
     width: cover;
-    height: 100vh;
+    height: 92vh;
     display: flex;
     align-items: end;
     justify-content: center;
-    background: url(../imagenes/bio.jpg);
+    background: url(../imagenes/bio2.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 main .titulo-bio {
@@ -190,6 +245,8 @@ main .titulo-bio {
     text-shadow: 2px 2px 11px black;
     color: white;
 }
+
+
 
 .section-general {
     display: grid;
@@ -459,9 +516,9 @@ main .titulo-calendario {
     display: flex;
     align-items: end;
     justify-content: center;
-    background: url(../imagenes/media.jpg);
+    background: url(../imagenes/media2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 main .titulo-media {
@@ -496,9 +553,9 @@ iframe {
     display: flex;
     align-items: end;
     justify-content: center;
-    background: url(../imagenes/contacto.jpg);
+    background: url(../imagenes/contacto3.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 main .titulo-contacto {
@@ -557,7 +614,8 @@ textarea {
 }
 
 #boton:hover {
-     background: #0C0B0B;
+    background: #222222;
+    transition: 1s;
 }
 
 
