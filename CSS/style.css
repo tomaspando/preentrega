@@ -167,11 +167,13 @@ body {
     background-position: center;
     animation-name: change ;
     animation-direction: alternate ;
-    animation-duration: 40s ;
+    animation-duration: 30s ;
     animation-fill-mode: forwards ;
     animation-iteration-count: infinite ;
     animation-timing-function: ease-in-out ;
 }
+
+/* BUSCAR ONLOAD HANDLER PARA EVITAR EL FLICK/BLINK */
 
 @keyframes change {
     0% {
