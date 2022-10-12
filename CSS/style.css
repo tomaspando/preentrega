@@ -333,12 +333,20 @@ main .titulo-bio {
     height: auto;
 }
 
+.timeline-imagen--alta {
+    text-align: center;
+}
+
+.timeline-imagen {
+    text-align: center;
+}
+
 .timeline-imagen img {
     margin-top: 10px;
     margin-bottom: 10px;
     width: 30vw;
     min-width: 280px;
-    
+
 }
 
 .timeline-imagen--alta img{
